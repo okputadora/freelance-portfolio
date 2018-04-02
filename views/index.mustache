@@ -5,6 +5,8 @@
       {{>nav}}
       <main class="valign-wrapper flex-col">
       <div id="about" class="flex-col">
+        <h1>About</h1>
+        <img src="./images/divider.png" class="section-divider"/>
         <img class="profile-pic z-depth-3"src="./images/profile.jpg" />
         <div class="intro center">Greetings! My name is Michael McVeigh
           and I'm a freelance web developer based in Philadelphia PA.
@@ -35,12 +37,13 @@
         </div>
       </div>
       <div id="contact" class="flex-col">
-
+        <h1>Contact</h1>
+        <img src="./images/divider.png" class="section-divider"/>
+        <p>If you're interested in working together send me a message!</p>
+        {{>contact-form}}
       </div>
     </main>
-    <footer>
-
-    </footer>
+    {{>footer}}
     <script type="text/javascript" src="/javascripts/build/main.bundle.js"></script>
   </body>
 </html>
