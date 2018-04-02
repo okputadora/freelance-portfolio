@@ -28,7 +28,7 @@ router.post('/:action', function(req, res, next){
     }
     else{
       console.log("success")
-      console.log(result)
+      res.redirect('/confirmation')
     }
   })
 })
