@@ -6,9 +6,11 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dotenv": "^5.0.1",
     "express": "^4.15.5",
     "hjs": "~0.0.6",
     "hogan-middleware": "^0.2.2",
