@@ -1,8 +1,82 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  /* border: 1px solid red; */
+  font-family: 'Philosopher', sans-serif;
+  letter-spacing: .06em;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+main{
+  min-height: 90vh;
+  width: 100vw;
+}
+#logo{
+  font-size: 30px;
+  transition: .2s;
+}
+#about{
+  margin-top: 150px;
+}
+.flex-col{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.fixed{
+  position: fixed;
+  top: 0;
 }
 
-a {
-  color: #00B7FF;
+.profile-pic{
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  height: 200px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.intro{
+  font-size: 18px;
+  width: 600px;
+  padding: 15px;
+  transition: .2s;
+}
+
+.section-divider{
+  height: 40px;
+  margin-bottom: 50px;
+}
+
+#projects{
+  width: 100%;
+}
+.project{
+  width: 66%;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  margin-bottom: 50px;
+}
+
+.project-img{
+  width: 100%;
+}
+
+.project-desc{
+}
+
+@media screen and (max-width: 700px){
+  #logo{
+    font-size: 20px;
+  }
+  .intro{
+    font-size: 15px;
+    width: 90%;
+  }
+  .project{
+    width: 80%
+  }
 }
