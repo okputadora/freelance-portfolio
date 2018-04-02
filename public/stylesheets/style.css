@@ -7,6 +7,10 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+.subtle-background{
+  background: url('../images/topography.png')
+}
 main{
   min-height: 90vh;
   /* width: 100vw; */
@@ -73,13 +77,9 @@ main{
   max-width: 800px;
 }
 
-.contact-title{
-  
-}
-
 .contact-form{
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   padding: 15px;
   border-radius: 5px;
   background: #f9f9f9

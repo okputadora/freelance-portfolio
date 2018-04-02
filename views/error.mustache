@@ -1,3 +1,14 @@
-<h1>{{ message }}</h1>
-<h2>{{ error.status }}</h2>
-<pre>{{ error.stack }}</pre>
+<!DOCTYPE html>
+<html>
+  {{>head}}
+  <body>
+      {{>nav}}
+      <main class="valign-wrapper flex-col subtle-background">
+        <div class="container">
+        <h1>Error: 404</h1>
+        <h2>I'm not sure what page you're looking for</h2>
+      </div>
+      </main>
+    {{>footer}}
+</body>
+</html>

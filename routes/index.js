@@ -7,6 +7,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/:page', function(req, res, next){
+  var page = req.params.page
+  res.render(page)
+})
+
 router.post('/:action', function(req, res, next){
   if (req.params.action === "inquiry"){
     var params = req.body
@@ -28,9 +33,9 @@ router.post('/:action', function(req, res, next){
     }
     else{
       console.log("success")
-      res.redirect('/confirmation')
     }
   })
+  res.redirect('/confirmation');
 })
 
 module.exports = router;
