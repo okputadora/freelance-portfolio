@@ -3,7 +3,6 @@ console.log("connected")
 
 $(window).on("load", function(){
   /* ---- particles.js config ---- */
-
   particlesJS("particles-js", {
     "particles": {
       "number": {
@@ -228,19 +227,25 @@ $(window).on("load", function(){
   });
 
 
-  $("#about-btn").click(function(){
+  $(".about-btn").click(function(){
     $('html, body').animate({
         scrollTop: $("#about").offset().top - 300
     }, 500);
   })
-  $("#projects-btn").click(function(){
+  $(".projects-btn").click(function(){
     $('html, body').animate({
         scrollTop: $("#projects").offset().top - 50
     }, 500);
   })
-  $("#contact-btn").click(function(){
+  $(".contact-btn").click(function(){
     $('html, body').animate({
         scrollTop: $("#contact").offset().top - 50
     }, 500);
   })
 })
+
+// Mobile nave menu
+$(document).ready(function(){
+  console.log("ready")
+  $('.sidenav').sidenav();
+});

@@ -16,5 +16,8 @@
     "hogan-middleware": "^0.2.2",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }

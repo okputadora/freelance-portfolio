@@ -8,7 +8,13 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:page', function(req, res, next){
+  console.log("redirecting")
   var page = req.params.page
+  console.log(page)
+  if (page == "inquiry"){
+    next()
+    return
+  }
   res.render(page)
 })
 
@@ -17,8 +23,8 @@ router.post('/:action', function(req, res, next){
     var params = req.body
     console.log(params)
   }
-
-  sgMail.setApiKey(AWS_SENDGRID_API_KEY)
+  // sgMail.setApiKey(AWS_SENDGRID_API_KEY)
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = {
     to: 'mmcveigh33@gmail.com',
     from: params.email,
@@ -30,13 +36,14 @@ router.post('/:action', function(req, res, next){
     if (error){
       console.log("error")
       console.log(error)
+      res.redirect('/confirmation');
       return
     }
     else{
       console.log("success")
+      res.redirect('/confirmation');
     }
   })
-  res.redirect('/confirmation');
 })
 
 module.exports = router;
