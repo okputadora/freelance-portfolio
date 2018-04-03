@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
 *{
   /* border: 1px solid red; */
   font-family: 'Philosopher', sans-serif;
@@ -39,7 +48,7 @@
   height: 200px;
   z-index: 100;
   padding: 5px;
-  margin: -200px 10px 10px 10px;
+  margin-top: -200px;
 }
 
 .intro{
@@ -111,9 +120,18 @@
  background-color: #66BB6A !important;
  }
 
+ .confirmation{
+   color: white;
+   z-index: 100;
+   width: 90%;
+   height: 100%;
+   text-align: center;
+ }
 @media screen and (max-width: 700px){
-  nav{
-    /* height: 200px !important; */
+
+  .confirmation{
+    margin-top: 20px;
+    font-size: 14px;
   }
   #logo{
     font-size: 20px !important;
@@ -132,32 +150,15 @@
 @media screen and (max-width: 390px){
   #logo{
     line-height: 1.2;
-    float: right;
   }
 }
 /* ---- reset ---- */
 
-body {
-  margin: 0;
-  font:normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
 
 /* ---- particles.js container ---- */
-.confirmation{
-  color: white;
-  z-index: 100;
-  width: 90%;
-  height: 100%;
-  text-align: center;
-}
 #particles-js {
   width: 100%;
-  height: 400px;
+  height: 33vh;
   background-color: #222;
   background-image: url("");
   background-repeat: no-repeat;

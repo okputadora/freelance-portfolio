@@ -23,8 +23,8 @@ router.post('/:action', function(req, res, next){
     var params = req.body
     console.log(params)
   }
-  // sgMail.setApiKey(AWS_SENDGRID_API_KEY)
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+  sgMail.setApiKey(process.env.AWS_SENDGRID_API_KEY)
+  // sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = {
     to: 'mmcveigh33@gmail.com',
     from: params.email,

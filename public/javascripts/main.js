@@ -3,6 +3,7 @@ console.log("connected")
 
 $(window).on("load", function(){
   /* ---- particles.js config ---- */
+
   particlesJS("particles-js", {
     "particles": {
       "number": {
