@@ -227,26 +227,15 @@ $(window).on("load", function(){
     "retina_detect": true
   });
 
-
-  $(".about-btn").click(function(){
+  $(".nav-button").on("click", function(){
+    var id = this.id.slice(4)
     $('html, body').animate({
-        scrollTop: $("#about").offset().top - 300
-    }, 500);
-  })
-  $(".projects-btn").click(function(){
-    $('html, body').animate({
-        scrollTop: $("#projects").offset().top - 50
-    }, 500);
-  })
-  $(".contact-btn").click(function(){
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top - 50
+        scrollTop: $("#"+id).offset().top - 300
     }, 500);
   })
 })
-
-// Mobile nave menu
-$(document).ready(function(){
-  console.log("ready")
-  $('.sidenav').sidenav();
-});
+  // Mobile nav menu
+  $(document).ready(function(){
+    console.log("ready")
+    $('.sidenav').sidenav();
+  });
